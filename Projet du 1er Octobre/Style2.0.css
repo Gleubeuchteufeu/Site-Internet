@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0; /*met la marge à 0 en haut et à gauche*/
+    padding: 0; /*met la marge à 0*/
+}
+body{
+    background-color: rgb(199, 183, 91); /*change la couleur de fond*/
+}
+.bloc-1{
+    text-align: center; /*met le texte au centre de la page en abscisse*/
+    height: 30px; /*epaisseur du texte*/
+}
+
+h1{
+    color: rgb(158, 10, 10); /*couleur du titre*/
+    position: relative; /*met le texte à la position innitiale, donc en haut a gauche*/
+    display: inline; /*met le texte du titre en ligne*/
+    white-space: nowrap; /*met le texte du titre en ligne*/
+    text-align: center; /*met le texte au centre de la page en abscisse*/
+    font-family: 'Cinzel', sans-serif; /*police d'écriture*/
+    font-size: 400px;/*taille de la police*/
+}
+h2{
+    font-size: 90px; /*taille de la police*/
+    font-family: 'Roboto Condensed', sans-serif; /*police d'écriture*/
+}
+h3{
+    text-align: center; /*met le texte au centre de la page en abscisse*/
+    color: #420000; /*couleur du texte*/
+    font-size: 100px; /*taille de la police*/
+    margin-left: 750px; /*marge en partant de la gauche*/
+    margin-right: 5000px; /*marge en partant de la droite*/
+    font-family: 'Playfair Display', sans-serif; /*police d'écriture*/
+}
+.hayloft{
+    text-align: center; /*met le texte au centre de la page en abscisse*/
+    color: #ffffff; /*couleur du texte*/
+    font-size: 100px; /*taille de la police*/
+    margin-top: 600px; /*marge en partant du haut*/
+    margin-left: 500px; /*marge en partant de la gauche*/
+    margin-right: 50px; /*marge en partant de la droite*/
+    column-count: 4; /*nombre de colonne*/
+    column-gap: 20px; /*espace entre les colonnes*/
+    margin-bottom: 60px; /*marge en partant du bas*/
+}
+.sidebar {
+    position: fixed; /*Rend la colonne fixe*/
+    top: 0; /*Aligné en haut de la page*/
+    left: 0; /*Aligné sur le côté gauche de la page*/
+    width: 400px; /*Largeur de la colonne*/
+    height: 100%; /*Prend toute la hauteur de la page*/
+    background-color: #000000; /*Couleur de fond*/
+    padding: 20px; /*met la marge à 20*/
+    color: rgb(255, 255, 255); /*Couleur du texte*/
+}
+
+.sidebar ul {
+    list-style-type: none; /*Supprime les puces des listes*/
+    margin: 0; /*met la marge à 0*/
+    padding: 0; /*met la marge à 0*/
+}
+
+.sidebar ul li {
+    margin: 15px 0; /*Espace entre les liens*/
+}
+
+.sidebar ul li a {
+    color: white; /*couleur des liens*/
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline; /*Effet au survol*/
+}
+
+h4{
+    font-size: 80px;
+    color: rgb(141, 0, 0); /*Couleur du texte*/
+}
+
+.sidebar2 {
+    position: fixed; /*Rend la colonne fixe*/
+    top: 0; /*Aligné en haut de la page*/
+    right: 0; /*Aligné sur le côté gauche de la page*/
+    width: 500px; /*Largeur de la colonne*/
+    height: 9%; /*Prend toute la hauteur de la page*/
+    background-color: #042000; /*Couleur de fond*/
+    padding: 20px; /*met la marge à 20*/
+    color: rgb(141, 0, 0); /*Couleur du texte*/
+}
+
+.sidebar2 ul {
+    margin: 0; /*met la marge à 0*/
+    padding: 0; /*met la marge à 0*/
+    list-style-type: none; /*Supprime les puces des listes*/
+}
+
+.sidebar2 ul li {
+    margin: 15px 0; /*Espace entre les liens*/
+}
+
+.sidebar2 ul li a {
+    color: rgb(141, 0, 0); /*couleur des liens*/
+    text-decoration: none;
+}
+
+.sidebar2 ul li a:hover {
+    text-decoration: underline; /*Effet au survol*/
+}
+/*permet de redimentionner le site pour téléphone*/
+@media screen and (max-width: 800px) {
+    .bloc-1 {
+    width: 100%;
+}
+}
